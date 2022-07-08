@@ -4,7 +4,7 @@ import { useState } from 'react'
 const Nav = ({data,setData}) => {
 
 const [veri,setVeri]=useState(data)
-console.log(veri);
+// console.log(veri);
 
  const handleBreakfast = ()=>{
     // console.log(data);
@@ -22,13 +22,12 @@ console.log(veri);
     setData(veri)
   }
   
-  
   return (
     <div>
-        <button onClick={handleAll}className='border-0 mx-md-3 fw-bold fs-4 text-dark bg-white rounded-3 '>All</button>
-        <button onClick={handleBreakfast} className="border-0 mx-md-3 fw-bold fs-4 text-dark bg-white rounded-3"> Breakfast</button>
-        <button onClick={handleLunch} className="border-0 mx-md-3 fw-bold fs-4 text-dark bg-white rounded-3">Lunch</button>
-        <button onClick={handleShakes}className="border-0 mx-md-3 fw-bold fs-4 text-dark bg-white rounded-3">Shakes</button>
+        <button onClick={handleAll}className='border-0 m-1 mx-md-3 fw-bold fs-4 text-light bg-primary rounded-3 p-1'>All</button>
+        <button onClick={handleBreakfast} className="border-0 m-1 mx-md-3 fw-bold fs-4 text-light bg-primary rounded-3 p-1"> Breakfast</button>
+        <button onClick={handleLunch} className="border-0 m-1 mx-md-3 fw-bold fs-4 text-light bg-primary rounded-3 p-1">Lunch</button>
+        <button onClick={handleShakes}className="border-0 m-1 mx-md-3 fw-bold fs-4 text-light bg-primary rounded-3 p-1">Shakes</button>
     </div>
   )
 }

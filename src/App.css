@@ -25,7 +25,7 @@ img{
 }
 button{
   transition: all 0.5s ease-in;
-  width: 7rem;
+  width: 8rem;
 }
 button:hover{
   background-color: #ffc107 !important;
